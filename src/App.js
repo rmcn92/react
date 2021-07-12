@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Aurora from './components/Aurora';
+import Beach from './components/Beach';
+import Forest from './components/Forest';
+import Jungle from './components/Jungle';
+import Lake from './components/Lake';
+import Milky from './components/Milky';
+import Navigation from './components/Navigation';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Route path="/Aurora" component={Aurora} />
+      <Route path="/Beach" component={Beach} />
+      <Route path="/Forest" component={Forest} />
+      <Route path="/Jungle" component={Jungle} />
+      <Route path="/Lake" component={Lake} />
+      <Route path="/Milky" component={Milky} />
+
+      <Navigation />
+    </Router>
   );
 }
 
