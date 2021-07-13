@@ -3,8 +3,8 @@ import Lake2 from '../images/lake.jpg'
 
 const Lake = () => {
     return (
-        <div>
-        <img src={Lake2} />
+        <div className="container">
+        <img src={Lake2} className="image"/>
             
         </div>
     )

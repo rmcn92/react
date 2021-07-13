@@ -3,8 +3,8 @@ import Beach2 from '../images/beach.jpg'
 
 const Beach = () => {
     return (
-        <div>
-            <img src={Beach2} />
+        <div className="container">
+            <img src={Beach2} className="image"/>
         </div>
     )
 }

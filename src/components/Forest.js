@@ -3,8 +3,8 @@ import Forest2 from '../images/forest.jpg'
 
 const Forest = () => {
     return (
-        <div>
-        <img src={Forest2} />
+        <div className="container">
+        <img src={Forest2} className="image"/>
             
         </div>
     )

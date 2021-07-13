@@ -12,6 +12,9 @@ import Navigation from './components/Navigation';
 function App() {
   return (
     <Router>
+      <div className="container">
+        <h1 className="text-center mt-3 mb-3 text-white">Gallery</h1>
+      </div>
       <Route path="/Aurora" component={Aurora} />
       <Route path="/Beach" component={Beach} />
       <Route path="/Forest" component={Forest} />
